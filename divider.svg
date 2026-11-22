@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 30" width="900" height="30" role="img" aria-label="Animated cyber divider">
+  <title>Cyber divider</title>
+
+  <defs>
+    <linearGradient id="divLine" gradientUnits="userSpaceOnUse" x1="26" y1="0" x2="874" y2="0">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00d4ff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#00d4ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="divBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#eaf6ff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="divBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#05070f" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#070c18" stop-opacity="0.95"/>
+      <stop offset="88%" stop-color="#070c18" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#05070f" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="divGlow" x="-40%" y="-200%" width="180%" height="500%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- dark rail -->
+  <rect x="0" y="3" width="900" height="24" fill="url(#divBg)"/>
+  <rect x="0" y="3" width="900" height="1" fill="#16213e" opacity="0.6"/>
+  <rect x="0" y="26" width="900" height="1" fill="#16213e" opacity="0.6"/>
+
+  <!-- static rail -->
+  <line x1="26" y1="15" x2="874" y2="15" stroke="url(#divLine)" stroke-width="2.5"/>
+
+  <!-- travelling light beam -->
+  <rect x="0" y="14" width="120" height="2" fill="url(#divBeam)" filter="url(#divGlow)">
+    <animateTransform attributeName="transform" type="translate" values="-120 0;900 0" dur="4.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- centre node -->
+  <g filter="url(#divGlow)">
+    <rect x="443" y="8" width="14" height="14" rx="2" fill="#0a1020" stroke="#00d4ff" stroke-width="1.4" transform="rotate(45 450 15)"/>
+    <circle cx="450" cy="15" r="2.4" fill="#00d4ff">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- pulsing ticks -->
+  <g fill="#00d4ff">
+    <circle cx="150" cy="15" r="2">
+      <animate attributeName="opacity" values="0.3;0.95;0.3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="270" cy="15" r="2">
+      <animate attributeName="opacity" values="0.3;0.95;0.3" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="630" cy="15" r="2">
+      <animate attributeName="opacity" values="0.3;0.95;0.3" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="15" r="2">
+      <animate attributeName="opacity" values="0.3;0.95;0.3" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- end caps -->
+  <circle cx="26" cy="15" r="2.6" fill="#00d4ff" opacity="0.6"/>
+  <circle cx="874" cy="15" r="2.6" fill="#a855f7" opacity="0.6"/>
+</svg>
