@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="Banner for Xorions - AI & Trading Bot Developer">
+  <!-- Background gradient cyber dark -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0" stop-color="#0a0a2e"/>
+      <stop offset="1" stop-color="#1a1a40"/>
+    </linearGradient>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#5b86e5"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredOut"/>
+      <feMerge>
+        <feMergeNode in="coloredOut"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+  <!-- Decorative lines top/bottom -->
+  <path d="M0 0 L1200 0 L1200 4 L0 4 Z" fill="#16213e"/>
+  <path d="M0 396 L1200 396 L1200 400 L0 400 Z" fill="#16213e"/>
+  <!-- Cyber grid pattern overlay -->
+  <rect width="1200" height="400" fill="none" opacity="0.3">
+    <filter url(#glow)</filter>
+  </rect>
+  <!-- Left accent stripe -->
+  <rect x="0" y="0" width="8" height="400" fill="#00d4ff"/>
+  <!-- Glow elements -->
+  <circle cx="150" cy="150" r="80" fill="#00d4ff" opacity="0.15"/>
+  <circle cx="300" cy="200" r="60" fill="#5b86e5" opacity="0.1"/>
+  <circle cx="900" cy="180" r="70" fill="#00d4ff" opacity="0.12"/>
+  <circle cx="1100" cy="250" r="50" fill="#7e57c5" opacity="0.1"/>
+  <!-- Main title -->
+  <text x="200" y="120" font-family="Inter, system-ui, -apple-font, sans-serif" font-size="96" font-weight="800" fill="#00d4ff" letter-spacing="4">XORIONS</text>
+  <!-- Tagline -->
+  <text x="200" y="170" font-family="Inter, system-ui, -apple-font, sans-serif" font-size="32" font-weight="400" fill="#a0d8ef" letter-spacing="2">AI • Trading • Cybersecurity</text>
+  <!-- Divider -->
+  <line x1="200" y1="200" x2="900" y2="200" stroke="#00d4ff" stroke-width="1" stroke-dasharray="8 4"/>
+  <!-- Tech stack chips -->
+  <g font-size="14" font-family="Inter, system-ui, -apple-font, sans-serif">
+    <text x="200" y="230" fill="#4ade80" letter-spacing="1">Python</text>
+    <text x="280" y="230" fill="#4ade80" letter-spacing="1">PHP</text>
+    <text x="360" y="230" fill="#4ade80" letter-spacing="1">TypeScript</text>
+    <text x="440" y="230" fill="#4ade80" letter-spacing="1">Go</text>
+    <text x="510" y="230" fill="#4ade80" letter-spacing="1">Kotlin</text>
+    <text x="580" y="230" fill="#4ade80" letter-spacing="1">Docker</text>
+    <text x="650" y="230" fill="#4ade80" letter-spacing="1">Shell</text>
+    <text x="730" y="230" fill="#4ade80" letter-spacing="1">OSINT</text>
+    <text x="800" y="230" fill="#4ade80" letter-spacing="1">Trading</text>
+    <text x="880" y="230" fill="#4ade80" letter-spacing="1">AI/ML</text>
+    <text x="960" y="230" fill="#4ade80" letter-spacing="1">Cybersecurity</text>
+  </g>
+  <!-- Right decorative elements -->
+  <path d="M900 100 C950 0 1050 20 1100 70 C1150 120 1180 180 1200 200 L1200 350 L1000 350 C950 330 900 300 900 250 Z" fill="#00d4ff" opacity="0.08"/>
+  <path d="M100 300 C150 350 250 380 300 330 C350 300 400 280 450 320 L500 360 C550 380 600 350 650 380 C700 400 800 400 850 350 L950 300 C1000 280 1050 300 1100 280 L1150 250 L1200 250 L1200 100 L100 100 Z" fill="#5b86e5" opacity="0.05"/>
+  <!-- Footer note -->
+  <text x="200" y="370" font-family="Inter, system-ui, -apple-font, sans-serif" font-size="11" font-weight="500" fill="#7f8c8d" letter-spacing="1">github.com/Xorions</text>
+</svg>
